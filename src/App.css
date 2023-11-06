@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  font-size: 62.5%;
+  font-size: 1rem;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ebfbff;
+  padding: 1rem;
+}
+.content-wrapper > form {
+  background-color: #ebfbff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+.content > input {
+  border: none;
+  height: 2rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+}
+.content-wrapper > form > button {
+  border: none;
+  background-color: #87cefa;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+/* .content > button :hover {
+  cursor: pointer;
+} */
+.working,
+.done {
+  font-weight: bolder;
+  padding-left: 1rem;
+}
+.working_todo {
+  width: 15rem;
+  padding: 1rem;
+  border: 0.2rem solid #87cefa;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.working_todo > h3 {
+  margin-top: 0.5rem;
+}
+.working_btn {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.working_btn > button {
+  border: 0.15rem solid #ff8c8c;
+  border-radius: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+  background-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.working_btn > button:nth-child(2) {
+  border: 0.15rem solid #74d19d;
+}
+.working > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
